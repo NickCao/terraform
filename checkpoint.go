@@ -20,7 +20,7 @@ var checkpointResult chan *checkpoint.CheckResponse
 // Checkpoint here: https://github.com/hashicorp/go-checkpoint.
 func runCheckpoint(c *cliconfig.Config) {
 	// If the user doesn't want checkpoint at all, then return.
-	if c.DisableCheckpoint {
+	if true {
 		log.Printf("[INFO] Checkpoint disabled. Not running.")
 		checkpointResult <- nil
 		return
